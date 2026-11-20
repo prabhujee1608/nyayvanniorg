@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -16,10 +16,13 @@
         try {
           stored = localStorage.getItem('nyaya_theme');
         } catch (e) {}
-        if (stored === null) {
-          localStorage.setItem('nyaya_theme', 'dark');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var isDark = stored === 'dark' || (stored === null && prefersDark);
+        if (isDark) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
         }
-        document.documentElement.classList.add('dark');
       })();
     </script>
     <link rel="stylesheet" crossorigin href="/assets/index-BBR3oM70.css">
@@ -28,7 +31,7 @@
     <script src="/demo-toolbar.js"></script>
     <script type="module" crossorigin src="/assets/index-LkZCte1b.js"></script>
   </head>
-  <body class="dark">
+  <body>
     <div id="root"></div>
   </body>
 </html>
