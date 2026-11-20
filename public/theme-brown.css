@@ -112,11 +112,7 @@ html.dark button[class*="bg-slate-800"] {
   color: #e5dfd5 !important;
 }
 
-html.dark #nyaya-demo-bar {
-  background: rgba(25, 19, 16, 0.94) !important;
-  border: 1px solid rgba(205, 175, 135, 0.28) !important;
-  color: #f7f4ef !important;
-}
+
 
 
 /* ======================================================== */
@@ -217,24 +213,7 @@ html:not(.dark) button[class*="bg-slate-800"]:hover {
   color: #1a130f !important;
 }
 
-/* Daylight Floating Demo Bar */
-html:not(.dark) #nyaya-demo-bar {
-  background: rgba(255, 255, 255, 0.94) !important;
-  border: 1px solid rgba(180, 140, 100, 0.3) !important;
-  box-shadow: 0 10px 30px -4px rgba(60, 40, 20, 0.15) !important;
-  color: #1a130f !important;
-}
 
-html:not(.dark) #nyaya-demo-bar button {
-  background: #f7f3ec !important;
-  color: #2b221c !important;
-  border-color: #ddd4c7 !important;
-}
-
-html:not(.dark) #nyaya-demo-bar button:hover {
-  background: #ede6dc !important;
-  color: #000000 !important;
-}
 
 html:not(.dark) #ipc-result-content {
   background: #ffffff !important;
