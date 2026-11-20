@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NyayaVanni is an AI-powered legal assistant that simplifies Indian legal documents." />
+    <title>NyayaVanni — AI-Powered Legal Assistant</title>
+
+    <script>
+      (function () {
+        var stored = null;
+        try {
+          stored = localStorage.getItem('nyaya_theme');
+        } catch (e) {}
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var isDark = stored === 'dark' || (stored === null && prefersDark);
+        if (isDark) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+    <script src="/api-shim.js"></script>
+    <script type="module" crossorigin src="/assets/index-LkZCte1b.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BBR3oM70.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
